@@ -42,7 +42,6 @@ class LogWin(threading.Thread):
         time.sleep(3)
 
     def callback(self):
-        ##This function is called when t
         print("Callback function is executed")
         self.root.quit()
 
