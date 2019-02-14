@@ -3,11 +3,9 @@ A simple GUI tool using multithreading which shows debuging messages on a hoveri
 
 
 Usage 
------------------------
-
-import dbgmsg
+```
+import dbgmsg     
 win = dbgmsg.LogWin()
 win.update("debuging logs...")
 
------------------------
-
+```
