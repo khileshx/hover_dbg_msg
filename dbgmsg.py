@@ -6,7 +6,6 @@ import threading
 
 def main():
    app = LogWin()
-  
    app.update("Sup\n")
    print("Main thread is still running about to sleep for 2 sec")
    time.sleep(2)
@@ -29,7 +28,6 @@ def main():
 #        self.st.insert("insert", text)
         
 class LogWin(threading.Thread):
-
     st = None
     
     def __init__(self):
