@@ -4,7 +4,6 @@ from tkinter.scrolledtext import ScrolledText
 import time
 import threading
 
-
 def main():
    app = LogWin()
   
@@ -15,8 +14,6 @@ def main():
    time.sleep(2)
    app.update("\nWorking as expected")
    
-    
-
 #class LogWindow:
 #    win = None
 #    st = None
@@ -31,7 +28,6 @@ def main():
 #    def update(self, text):
 #        self.st.insert("insert", text)
         
-
 class LogWin(threading.Thread):
 
     st = None
@@ -56,9 +52,8 @@ class LogWin(threading.Thread):
         
     def update(self, text, end="\n"):
         self.st.insert("insert", text + end)
-
-
         
+
 if __name__ == "__main__": main()
 
 
